@@ -64,9 +64,9 @@ public class Slytherin extends Hogwarts{
 
     public void printCompare(Slytherin slytherin) {
         if (this.compare(slytherin) == true) {
-            System.out.println(this.getFullName() + " лучший Слизерин, чем " + slytherin.getFullName());
+            System.out.println(this.getFullName() + " лучший Слизеринец, чем " + slytherin.getFullName());
         } else {
-            System.out.println(slytherin.getFullName() + " лучший Слизерин, чем " + this.getFullName());
+            System.out.println(slytherin.getFullName() + " лучший Слизеринец, чем " + this.getFullName());
         }
     }
 
