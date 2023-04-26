@@ -32,4 +32,25 @@ public class Hogwarts    {
     public void setTransgressionDistance(int transgressionDistance) {
         this.transgressionDistance = transgressionDistance;
     }
+
+    public boolean compare(Hogwarts hogwarts) {
+        return this.magicForce + this.transgressionDistance > hogwarts.magicForce + hogwarts.magicForce;
+    }
+
+    public void printCompare(Hogwarts hogwarts) {
+        if (this.compare(hogwarts) == true) {
+            System.out.println(this.getFullName() + " обладает большей мощностью магии, чем " + hogwarts.getFullName());
+        } else {
+            System.out.println(hogwarts.getFullName() + " обладает большей мощностью магии, чем " + this.getFullName());
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Hogwarts{" +
+                "fullName='" + fullName + '\'' +
+                ", magicForce=" + magicForce +
+                ", transgressionDistance=" + transgressionDistance +
+                '}';
+    }
 }

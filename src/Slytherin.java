@@ -53,4 +53,32 @@ public class Slytherin extends Hogwarts{
         this.lustForPower = lustForPower;
     }
 
+    private int totalPoint() {
+        return this.ambition + this.cunning + this.decisiveness
+                + this.resourcefulness + this.lustForPower;
+    }
+
+    public boolean compare(Slytherin slytherin) {
+        return this.totalPoint() > slytherin.totalPoint();
+    }
+
+    public void printCompare(Slytherin slytherin) {
+        if (this.compare(slytherin) == true) {
+            System.out.println(this.getFullName() + " лучший Когтевранец, чем " + slytherin.getFullName());
+        } else {
+            System.out.println(slytherin.getFullName() + " лучший Когтевранец, чем " + this.getFullName());
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Slytherin{" +
+                super.toString() +
+                "cunning=" + cunning +
+                ", decisiveness=" + decisiveness +
+                ", ambition=" + ambition +
+                ", resourcefulness=" + resourcefulness +
+                ", lustForPower=" + lustForPower +
+                '}';
+    }
 }

@@ -32,4 +32,30 @@ public class Hufflepuff extends Hogwarts {
     public void setHonest(int honest) {
         this.honest = honest;
     }
+
+    private int totalPoint() {
+        return this.hardWorking + this.loyal + this.honest;
+    }
+
+    public boolean compare(Hufflepuff hufflepuff) {
+        return this.totalPoint() > hufflepuff.totalPoint();
+    }
+
+    public void printCompare(Hufflepuff hufflepuff) {
+        if (this.compare(hufflepuff) == true) {
+            System.out.println(this.getFullName() + " лучший Пуффендуец, чем " + hufflepuff.getFullName());
+        } else {
+            System.out.println(hufflepuff.getFullName() + " лучший Пуффендуец, чем " + this.getFullName());
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Hufflepuff{" +
+                super.toString() +
+                "hardWorking=" + hardWorking +
+                ", loyal=" + loyal +
+                ", honest=" + honest +
+                '}';
+    }
 }
