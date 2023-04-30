@@ -1,18 +1,19 @@
-public class Slytherin extends Hogwarts{
+public class Slytherin extends Hogwarts {
     private int cunning;
     private int decisiveness;
     private int ambition;
     private int resourcefulness;
     private int lustForPower;
 
-    public Slytherin(String fullName, int magicForce, int transgressionDistance,int cunning, int decisiveness, int ambition, int resourcefulness, int lustForPower) {
-        super(fullName,magicForce,transgressionDistance);
+    public Slytherin(String fullName, int magicForce, int transgressionDistance, int cunning, int decisiveness, int ambition, int resourcefulness, int lustForPower) {
+        super(fullName, magicForce, transgressionDistance);
         this.cunning = cunning;
         this.decisiveness = decisiveness;
         this.ambition = ambition;
         this.resourcefulness = resourcefulness;
         this.lustForPower = lustForPower;
     }
+
     public int getCunning() {
         return cunning;
     }

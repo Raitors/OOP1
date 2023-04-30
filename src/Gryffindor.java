@@ -1,15 +1,15 @@
-
 public class Gryffindor extends Hogwarts {
     private int nobility;
     private int honor;
     private int courage;
 
-    public Gryffindor(String fullName, int magicForce, int transgressionDistance,int nobility, int honor, int courage) {
-        super(fullName,magicForce,transgressionDistance);
+    public Gryffindor(String fullName, int magicForce, int transgressionDistance, int nobility, int honor, int courage) {
+        super(fullName, magicForce, transgressionDistance);
         this.nobility = nobility;
         this.honor = honor;
         this.courage = courage;
     }
+
     public int getNobility() {
         return nobility;
     }
@@ -49,6 +49,7 @@ public class Gryffindor extends Hogwarts {
             System.out.println(gryffindor.getFullName() + " лучший Гриффиндорец, чем " + this.getFullName());
         }
     }
+
 
     @Override
     public String toString() {

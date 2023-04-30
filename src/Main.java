@@ -27,9 +27,10 @@ public class Main {
         printStudents.print(hogwarts);
         System.out.println();
 
-        hogwarts[0].printCompare(hogwarts[1]);
-        hogwarts[0].printCompare(hogwarts[4]);
-
+        hogwarts[0].printCompare((Gryffindor) hogwarts[1]);
+        hogwarts[9].printCompare((Slytherin) hogwarts[10]);
+        Compare compare = new Compare(hogwarts[0].getFullName(), hogwarts[0].getMagicForce(), hogwarts[0].getTransgressionDistance());
+        compare.printCompareHogwarts(hogwarts[7]);
 
     }
 }

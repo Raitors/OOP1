@@ -1,4 +1,4 @@
-public class Hogwarts    {
+public abstract class Hogwarts {
     private String fullName;
     private int magicForce;
     private int transgressionDistance;
@@ -7,6 +7,10 @@ public class Hogwarts    {
         this.fullName = fullName;
         this.magicForce = magicForce;
         this.transgressionDistance = transgressionDistance;
+    }
+
+    public Hogwarts() {
+
     }
 
     public String getFullName() {
@@ -33,17 +37,6 @@ public class Hogwarts    {
         this.transgressionDistance = transgressionDistance;
     }
 
-    public boolean compare(Hogwarts hogwarts) {
-        return this.magicForce + this.transgressionDistance > hogwarts.magicForce + hogwarts.magicForce;
-    }
-
-    public void printCompare(Hogwarts hogwarts) {
-        if (this.compare(hogwarts) == true) {
-            System.out.println(this.getFullName() + " обладает большей мощностью магии, чем " + hogwarts.getFullName());
-        } else {
-            System.out.println(hogwarts.getFullName() + " обладает большей мощностью магии, чем " + this.getFullName());
-        }
-    }
 
     @Override
     public String toString() {
@@ -53,4 +46,17 @@ public class Hogwarts    {
                 ", transgressionDistance=" + transgressionDistance +
                 '}';
     }
+
+    public void printCompare(Gryffindor hogwart) {
+    }
+
+    public void printCompare(Hufflepuff hogwart) {
+    }
+
+    public void printCompare(Ravenclaw hogwart) {
+    }
+
+    public void printCompare(Slytherin hogwart) {
+    }
+
 }
