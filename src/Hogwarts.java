@@ -47,16 +47,19 @@ public abstract class Hogwarts {
                 '}';
     }
 
-    public void printCompare(Gryffindor hogwart) {
+    public void printCompare(Gryffindor hogwarts) {
     }
 
-    public void printCompare(Hufflepuff hogwart) {
+    public void printCompare(Hufflepuff hogwarts) {
     }
 
-    public void printCompare(Ravenclaw hogwart) {
+    public void printCompare(Ravenclaw hogwarts) {
     }
 
-    public void printCompare(Slytherin hogwart) {
+    public void printCompare(Slytherin hogwarts) {
     }
 
+    public boolean compare(Hogwarts hogwarts) {
+        return false;
+    }
 }

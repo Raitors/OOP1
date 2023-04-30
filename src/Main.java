@@ -29,8 +29,8 @@ public class Main {
 
         hogwarts[0].printCompare((Gryffindor) hogwarts[1]);
         hogwarts[9].printCompare((Slytherin) hogwarts[10]);
-        Compare compare = new Compare(hogwarts[0].getFullName(), hogwarts[0].getMagicForce(), hogwarts[0].getTransgressionDistance());
-        compare.printCompareHogwarts(hogwarts[7]);
+        Compare compare = new Compare();
+        compare.printCompareHogwarts(hogwarts[1], hogwarts[7]);
 
     }
 }
